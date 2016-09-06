@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div,body,html,p,input,textarea,button{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            width: 500px;
+            height: auto;
+            border: 1px solid #4A90E2;
+        }
+        .main{
+            width: 500px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .input-group{
+            width: 500px;
+            height:30px;
+            display: flex;
+            flex-direction: row;
+            margin-top: 10px;
+        }
+        .input-group p{
+            display: inline-block;
+            width: auto;
+            font-size: 15px;
+            margin: 0 15px;
+        }
+        .input-group input{
+            width: auto;
+            height: auto;
+            flex: 1;
+        }
+        .input-group textarea{
+            width: auto;
+            height: auto;
+            flex: 1;
+        }
+        button{
+            width: 100%;
+            height: 35px;
+            border-radius: 0;
+            margin-top: 10px;
+            font-size: 16px;
+            background-color: #4A90E2;
+            border: none;
+            color:white;
+        }
+        .title{
+            text-align: center;
+            background-color:#4A90E2;
+            color: white;
+            display: flex;
+            height: 35px;
+        }
+        .title p{
+            color:white;
+            height: 20px;
+            font-size: 15px;
+            margin: auto;
+        }
+        #success{
+            transition: display 1s;
+            width: 502px;
+            height: 242px;
+            background-color: rgba(30,30,30,0.5);
+            display: none;
+            position: fixed;
+        }
+        #success p{
+            font-size: 20px;
+            color: white;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+<div id="success">
+    <p>保存成功</p>
+</div>
+<div class="main">
+    <div class="title"><p>在线编辑我的收藏</p></div>
+    <form class="collecform">
+        <div class="input-group">
+            <p>我的密钥</p>
+            <input id="pass">
+        </div>
+        <div class="input-group">
+            <p>收藏标题</p>
+            <input id="title">
+        </div>
+        <div class="input-group">
+            <p>收藏标签</p>
+            <input id="tags">
+        </div>
+        <div class="input-group">
+            <p>收藏内容</p>
+            <textarea id="url"></textarea>
+        </div>
+    </form>
+    <button id="submitcollec">提交收藏</button>
+</div>
+<script src="index.js"></script>
+
+
+
